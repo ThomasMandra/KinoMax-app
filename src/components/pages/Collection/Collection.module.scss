@@ -1,0 +1,15 @@
+.buttonCollection {
+  display: flex;
+
+  &Link {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+  }
+
+  &Link:hover {
+    transform: scale(1.1);
+    border-radius: 25px;
+  }
+}

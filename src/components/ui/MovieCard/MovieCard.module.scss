@@ -1,0 +1,12 @@
+.img {
+  width: 215px;
+  transition: transform 0.5s;
+
+  &Link {
+    text-decoration: none;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
