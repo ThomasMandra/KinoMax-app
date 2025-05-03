@@ -1,7 +1,6 @@
-import { Skeleton, Stack, useMediaQuery } from "@mui/material";
+import { Skeleton, Stack } from "@mui/material";
 
 export default function MoviesListTopSkeleton() {
-  const isMobile = useMediaQuery("(max-width:600px)");
   return (
     <>
       <Skeleton

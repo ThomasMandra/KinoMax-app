@@ -6,9 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
 import {
   Divider,
@@ -24,11 +22,7 @@ import {
   useScrollTrigger,
 } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
-import {
-  iconComponents,
-  MOVIE_LISTS,
-  TOP_LIST_MOBILE,
-} from "../../../constant";
+import { MOVIE_LISTS, TOP_LIST_MOBILE } from "../../../constant";
 import Search from "../Search/Search";
 import { Brightness4, Brightness7 } from "@mui/icons-material";
 import { ColorModeContext } from "../../../context/ToggleColorMode";
@@ -57,16 +51,6 @@ function HideOnScroll(props: Props) {
     </Slide>
   );
 }
-
-interface IconComponentProps {
-  iconName: string;
-}
-
-const Icon = ({ iconName }: IconComponentProps) => {
-  const IconComponent = iconComponents[iconName as keyof typeof iconComponents];
-
-  return <IconComponent />;
-};
 
 function Navbar(props: Props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);

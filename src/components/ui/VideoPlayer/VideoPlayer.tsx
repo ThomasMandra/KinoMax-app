@@ -1,5 +1,4 @@
 import { Stack, Typography, useMediaQuery } from "@mui/material";
-import React, { useEffect } from "react";
 import { useGetTrailerQuery } from "../../../services/youTubeApi";
 import ReactPlayer from "react-player/youtube";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";

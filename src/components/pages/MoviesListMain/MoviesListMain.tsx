@@ -3,7 +3,7 @@ import {
   useGetFilmsQuery,
   useGetGenresAndCountriesQuery,
 } from "../../../services/kinopoiskApi";
-import { MOVIE_LISTS, TOP_LIST_MOBILE } from "../../../constant";
+import { MOVIE_LISTS } from "../../../constant";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Button, Stack, Typography } from "@mui/material";
 import MoviesList from "../../ui/MoviesList/MoviesList";
