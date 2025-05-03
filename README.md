@@ -1,54 +1,22 @@
-# React + TypeScript + Vite
+# KinoMax 
+Онлайн кинотеатр, с возможностью посмотреть трейлер (Должен быть включён VPN)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+![image](https://github.com/user-attachments/assets/3e4d9bdc-602a-4b00-8d43-cbf7f56930a8)
+![image](https://github.com/user-attachments/assets/3aae6c9d-22de-4654-b4a7-8d3306acea72)
+![image](https://github.com/user-attachments/assets/ebf4d61f-8f74-40ff-bc34-4750a45c3b65)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Запуск проекта
+1. Получить ключ на сайте https://kinopoiskapiunofficial.tech/ и добавить в .env файл.
+2.  Получить ключ на сайте https://rapidapi.com/hub и добавить в .env файл.
+3. npm install
+4. npm run dev
 
-## Expanding the ESLint configuration
+## Технологии
+1. TypeScript
+2. React
+3. Redux Toolkit + query
+4. MUI
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Деплой
+[https://betflix-app.netlify.app](https://kinomax-app.netlify.app/)
